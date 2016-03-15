@@ -121,4 +121,4 @@ google_suggest($keyword);
 
 ## Reference
 
-[Packagist](https://github.com/euclid1990/php-google-suggest/blob/master/demo/run.php)
+[Packagist](https://packagist.org/packages/euclid1990/php-google-suggest)

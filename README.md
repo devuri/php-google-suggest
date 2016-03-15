@@ -35,7 +35,14 @@ Update your packages with ```composer update``` or install with ```composer inst
 
 #### Commmon
 
-#### Laravel
+Add boostrap autoload file:
+```php
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use euclid1990\PhpGoogleSuggest\GoogleSuggest;
+```
+
+#### For Laravel
 
 To use the Google Suggest Service, you must register the provider when bootstrapping your Laravel application. There are essentially two ways to do this.
 

@@ -87,12 +87,25 @@ Please refer to [demo/run.php](https://github.com/euclid1990/php-google-suggest/
 # php demo/run.php
 ```
 
+
+#### config:
+```
+# file /config/google_suggest.php
+
+
+return [
+    'limit' => 10,//max 10
+    'language' => 'en',
+];
+```
+
+
 ```php
 require_once __DIR__ . '/../vendor/autoload.php';
 
 use euclid1990\PhpGoogleSuggest\GoogleSuggest;
 
-$configArr = require __DIR__.'/../config/google_suggest.php';
+$configArr = require __DIR__.'/config/google_suggest.php';
 $config = ['google_suggest' => $configArr];
 $googleSuggest = new GoogleSuggest(new Illuminate\Config\Repository($config));
 

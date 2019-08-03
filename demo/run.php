@@ -4,7 +4,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 use euclid1990\PhpGoogleSuggest\GoogleSuggest;
 
-$configArr = require __DIR__.'/../config/google_suggest.php';
+$configArr = require __DIR__.'/config/google_suggest.php';
 $config = ['google_suggest' => $configArr];
 $googleSuggest = new GoogleSuggest(new Illuminate\Config\Repository($config));
 
